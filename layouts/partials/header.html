@@ -24,6 +24,10 @@
 			{{ else }}
 			<span class="next disable">Next</span>
 			{{- end -}}
+			{{ else }}
+			{{- if .IsHome -}}
+			{{ partial "next" . }}
+			{{- end -}}
 			{{- end -}}
 			<h1><a href="/" class="site-title">{{ .Site.Title }}</a></h1>
 			{{- if eq .Section "posts" -}}
@@ -31,6 +35,10 @@
 			<a class="prev" href="{{ .PrevInSection.Permalink }}">Prev</a>
 			{{ else }}
 			<span class="prev disable">Prev</span>
+			{{- end -}}
+			{{ else }}
+			{{- if .IsHome -}}
+			{{ partial "prev" . }}
 			{{- end -}}
 			{{- end -}}
 			{{- if and .IsHome .Site.Params.subtitle -}}
