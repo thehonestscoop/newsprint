@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+	<head>
+		<meta charset="utf-8"/>
+
+		{{ partial "meta.html" . }}
+
+		<base href="{{ .Site.BaseURL }}">
+		<title>{{ if not .IsHome }}{{ .Title }} — {{ end }}{{ .Site.Title }}</title>
+		<link rel="canonical" href="{{ .Permalink }}">
+		<link href="/favicon.png" rel="icon"/>
+		{{- if .RSSLink }}
+		<link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+		<link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+		{{ end -}}
+
+		{{ partial "head_includes.html" . }}
+	</head>
+
+	<body>
+		<header>
+			{{- if eq .Section "posts" -}}
+			{{- if .NextInSection -}}
+			<a class="next" href="{{ .NextInSection.Permalink }}">Next</a>
+			{{ else }}
+			<span class="next disable">Next</span>
+			{{- end -}}
+			{{- end -}}
+			<h1><a href="/" class="site-title">{{ .Site.Title }}</a></h1>
+			{{- if eq .Section "posts" -}}
+			{{- if .PrevInSection -}}
+			<a class="prev" href="{{ .PrevInSection.Permalink }}">Prev</a>
+			{{ else }}
+			<span class="prev disable">Prev</span>
+			{{- end -}}
+			{{- end -}}
+			{{- if and .IsHome .Site.Params.subtitle -}}
+			<h2>{{ .Site.Params.subtitle }}</h2>
+			{{- end -}}
+		</header>

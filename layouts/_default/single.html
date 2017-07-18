@@ -1,0 +1,22 @@
+{{ partial "header" . }}
+<article {{if .Params.article_class}}{{.Params.article_class}}{{end}}>
+	<header class="hr">
+
+		{{- if .Params.cover }}
+		<div {{if .Params.cover_caption}}data-caption="{{.Params.cover_caption}}" {{end}}class="coverimg">
+			{{- if .Params.cover_link}}<a href="{{.Params.cover_link}}">{{ end }}
+				<img src="{{.Params.cover}}" {{if .Params.cover_title}}title="{{.Params.cover_title}}" {{end}}alt="{{if .Params.cover_alt}}{{.Params.cover_alt}}{{end}}"/>
+				{{- if .Params.cover_link}}</a>{{ end }}
+		</div>
+		{{ end }}
+
+		{{ if .Title -}}
+		<h1 class="entry-title">{{ .Title }}</h1>
+		{{- end }}
+		{{ partial "datetime" .Date }}
+	</header>
+	<section class="content{{if .Params.content_class}} {{.Params.content_class}}{{end}}">
+		{{ .Content }}
+	</section>
+</article>
+{{ partial "footer" . }}
