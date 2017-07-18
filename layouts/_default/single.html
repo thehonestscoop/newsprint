@@ -1,5 +1,5 @@
 {{ partial "header" . }}
-<article {{if .Params.article_class}}{{.Params.article_class}}{{end}}>
+<article{{if .Params.article_class}} class="{{.Params.article_class}}"{{end}}>
 	<header class="hr">
 
 		{{ partial "cover" . }}
