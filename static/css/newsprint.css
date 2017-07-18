@@ -145,6 +145,15 @@ body section.content article.thumb {
 	body section.content article.thumb {
 		text-align: center;
 	}
+
+	body section.content article.thumb p {
+		text-align: left;
+		margin: 0 2rem;
+	}
+
+	p {
+		margin: 0 0.5rem;
+	}
 }
 
 body section.content article.thumb img {
