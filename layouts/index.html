@@ -1,7 +1,7 @@
 {{ partial "header" . }}
 
 <section class="content list">
-	{{- range $index, $element := .Data.Pages }}
+	{{- range $index, $element := .Paginator.Pages }}
 	{{- if eq .Section "posts" }}
 	<article class="thumb">
 		<div class="imgthumb">
