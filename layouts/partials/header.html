@@ -3,17 +3,17 @@
 	<head>
 		<meta charset="utf-8"/>
 
-		{{ partial "meta.html" . }}
+		{{- partial "meta.html" . -}}
 
-		<title>{{ if not .IsHome }}{{ .Title }} — {{ end }}{{ .Site.Title }}</title>
+		<title>{{- if not .IsHome -}}{{ .Title }} — {{- end -}}{{ .Site.Title }}</title>
 		<link rel="canonical" href="{{ .Permalink }}">
 		<link href="/favicon.png" rel="icon"/>
-		{{- if .RSSLink }}
+		{{- if .RSSLink -}}
 		<link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
 		<link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
-		{{ end -}}
+		{{- end -}}
 
-		{{ partial "head_includes.html" . }}
+		{{- partial "head_includes.html" . -}}
 	</head>
 
 	<body>
@@ -21,24 +21,24 @@
 			{{- if eq .Section "posts" -}}
 			{{- if .NextInSection -}}
 			<a class="next" href="{{ .NextInSection.Permalink }}">Next</a>
-			{{ else }}
+			{{- else -}}
 			<span class="next disable">Next</span>
 			{{- end -}}
-			{{ else }}
+			{{- else -}}
 			{{- if .IsHome -}}
-			{{ partial "next" . }}
+			{{- partial "next" . -}}
 			{{- end -}}
 			{{- end -}}
 			<h1><a href="/" class="site-title">{{ .Site.Title }}</a></h1>
 			{{- if eq .Section "posts" -}}
 			{{- if .PrevInSection -}}
 			<a class="prev" href="{{ .PrevInSection.Permalink }}">Prev</a>
-			{{ else }}
+			{{- else -}}
 			<span class="prev disable">Prev</span>
 			{{- end -}}
-			{{ else }}
+			{{- else -}}
 			{{- if .IsHome -}}
-			{{ partial "prev" . }}
+			{{- partial "prev" . -}}
 			{{- end -}}
 			{{- end -}}
 			{{- if and .IsHome .Site.Params.subtitle -}}

@@ -1,13 +1,13 @@
-{{ partial "header" . }}
+{{- $paginator := .Paginate (where .Data.Pages "Type" "posts") -}}
+{{- partial "header" . -}}
 
 <section class="content list">
-	{{- range $index, $element := .Paginator.Pages }}
-	{{- if eq .Section "posts" }}
+	{{- range $index, $element := $paginator.Pages -}}
 	<article class="thumb">
 		<div class="imgthumb">
-		{{- if .Params.thumbnail }}
+		{{- if .Params.thumbnail -}}
 		<a href="{{ .URL }}">{{ partial "thumbnail" .Params }}</a>
-		{{ end }}
+		{{- end -}}
 		</div>
 		<div class="prevtext">
 		<h1><a href="{{ .URL }}">{{ .Title }}</a></h1>
@@ -17,19 +17,18 @@
 		shouldn't use these params as they might go away in the future after I've
 		cleaned up my personal blog.
 		*/}}
-		{{ partial "datetime" .Date }}
-		{{ if .Params.excerpt -}}
+		{{- partial "datetime" .Date -}}
+		{{- if .Params.excerpt -}}
 		<p>{{ .Params.excerpt }}</p>
 		{{- else -}}
-		{{ if .Params.description -}}
+		{{- if .Params.description -}}
 		<p>{{ .Params.description }}</p>
 		{{- else -}}
-		{{ if .Summary }}<p>{{ .Summary }}</p>{{ end }}
-		{{ end }}{{ end }}
+		{{- if .Summary -}}<p>{{ .Summary }}</p>{{- end -}}
+		{{- end -}}{{- end -}}
 		</div>
 	</article>
-	{{- end }}
-	{{- end }}
+	{{- end -}}
 </section>
 
-{{ partial "footer" . }}
+{{- partial "footer" . -}}
