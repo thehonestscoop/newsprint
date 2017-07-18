@@ -83,58 +83,69 @@ section.content.list {
 	margin-bottom: 0;
 }
 
-section.content.list:after {
-	border-left: 1px solid #333;
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	top: 0;
-	transform: translate(-50%);
-	z-index: -1;
-}
 body section.content article.thumb {
 	padding: 2rem 0;
 }
 
-body section.content article.thumb .imgthumb {
-	vertical-align: middle;
-	width: 48%;
-	display: inline-block;
+
+@media (min-width: 500px) {
+	/* Draw centerline */
+	section.content.list:after {
+		border-left: 1px solid #333;
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		top: 0;
+		transform: translate(-50%);
+		z-index: -1;
+	}
+
+	body section.content article.thumb:nth-child(2n) {
+		direction: rtl;
+	}
+
+	body section.content article.thumb .imgthumb {
+		vertical-align: middle;
+		width: 48%;
+		display: inline-block;
+	}
+
+	body section.content article.thumb:nth-child(2n) .imgthumb {
+		text-align: left;
+	}
+
+	body section.content article.thumb:nth-child(2n+1) .imgthumb {
+		text-align: right;
+	}
+
+	body section.content article.thumb .prevtext {
+		width: 50%;
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		direction: ltr;
+	}
+
+	body section.content article.thumb:nth-child(2n+1) .prevtext {
+		text-align: left;
+		left: 1rem;
+		margin-left: auto;
+		margin-right: 0;
+	}
+
+	body section.content article.thumb:nth-child(2n) .prevtext {
+		text-align: right;
+		right: 1rem;
+		margin-left: 0;
+		margin-right: auto;
+	}
 }
 
-body section.content article.thumb:nth-child(2n) .imgthumb {
-	text-align: left;
-}
-
-body section.content article.thumb:nth-child(2n+1) .imgthumb {
-	text-align: right;
-}
-
-body section.content article.thumb:nth-child(2n) {
-	direction: rtl;
-}
-
-body section.content article.thumb .prevtext {
-	width: 50%;
-	position: relative;
-	display: inline-block;
-	vertical-align: middle;
-	direction: ltr;
-}
-
-body section.content article.thumb:nth-child(2n+1) .prevtext {
-	text-align: left;
-	left: 1rem;
-	margin-left: auto;
-	margin-right: 0;
-}
-
-body section.content article.thumb:nth-child(2n) .prevtext {
-	text-align: right;
-	right: 1rem;
-	margin-left: 0;
-	margin-right: auto;
+@media (max-width: 499px) {
+	body section.content article.thumb {
+		text-align: center;
+	}
 }
 
 body section.content article.thumb img {
