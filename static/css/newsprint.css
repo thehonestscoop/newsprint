@@ -154,6 +154,10 @@ body section.content article.thumb {
 	p {
 		margin: 0 0.5rem;
 	}
+
+	header .next, header .prev {
+		display: block;
+	}
 }
 
 body section.content article.thumb img {
