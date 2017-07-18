@@ -1,0 +1,10 @@
+{{- if .Paginator.HasPrev -}}
+		<a class="next" href="{{ .Paginator.Prev.URL }}">Next</a>
+{{ else }}
+		<span class="next disable">Next</span>
+{{- end -}}
+{{- if .Paginator.HasNext -}}
+		<a class="prev" href="{{ .Paginator.Next.URL }}">Prev</a>
+{{ else }}
+		<span class="prev disable">Prev</span>
+{{- end -}}
