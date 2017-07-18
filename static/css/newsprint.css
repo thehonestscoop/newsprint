@@ -156,10 +156,19 @@ body article h2 {
 }
 
 body article h2:before {
+	content: "❦";
 	display: block;
+	font-family: 'Cormorant Garamond', serif, "symbola";
 	font-size: 1rem;
 	line-height: 1.7rem;
-	content: "❦";
+}
+
+body article h2[data-accent]:before {
+	content: attr(data-accent);
+	display: block;
+	font-family: 'Cormorant Garamond', serif, "symbola";
+	font-size: 1rem;
+	line-height: 1.7rem;
 }
 
 abbr {
