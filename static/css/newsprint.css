@@ -238,6 +238,10 @@ span.label {
 	float: right;
 }
 
+.pull-left {
+	float: left;
+}
+
 address {
 	margin: 0 auto;
 	width: 15rem;
@@ -348,4 +352,9 @@ blockquote footer cite:before {
 	font-size: 1.4rem;
 	line-height: 1.45rem;
 	font-family: "Helvetica Neue",Arial,sans-serif;
+}
+
+.poem {
+	max-width: 30rem !important;
+	margin: 0 auto !important;
 }
