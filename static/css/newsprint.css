@@ -291,3 +291,20 @@ footer nav {
 	color: #ccc;
 	text-decoration: none;
 }
+
+.badge {
+	border-radius: 0.5rem;
+	display: inline-block;
+	padding: 0.2rem 0.5rem;
+	font-weight: bold;
+	color: #fff;
+	white-space: nowrap;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	vertical-align: baseline;
+	background-color: #999;
+	font-size: x-small;
+}
+
+.badge-success {
+	background-color: #468847;
+}
