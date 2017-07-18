@@ -89,7 +89,6 @@ body section.content article.thumb {
 
 
 @media (min-width: 500px) {
-	/* Draw centerline */
 	section.content.list:after {
 		border-left: 1px solid #333;
 		content: "";
