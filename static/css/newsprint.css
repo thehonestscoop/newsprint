@@ -160,6 +160,10 @@ body section.content article.thumb {
 	header .next, header .prev {
 		display: block;
 	}
+
+	header .prev {
+		margin-bottom: 0.5rem;
+	}
 }
 
 body section.content article.thumb img {
