@@ -229,6 +229,14 @@ body article.thumb h1 {
 	line-height: 2.5rem;
 }
 
+body article.thumb:nth-child(2n) h1 {
+	text-align: right;
+}
+
+body article.thumb:nth-child(2n+1) h1 {
+	text-align: left;
+}
+
 body article.thumb h1 a {
 	text-decoration: none;
 	color: #333;
