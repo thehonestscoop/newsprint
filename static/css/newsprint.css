@@ -144,7 +144,11 @@ body section.content article.thumb {
 	}
 }
 
-@media (max-width: 499px) {
+@media (max-width: 500px) {
+	body article.thumb h1 {
+		text-align: center !important;
+	}
+
 	body section.content article.thumb {
 		text-align: center;
 	}
