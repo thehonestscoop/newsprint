@@ -2,8 +2,7 @@
 <html class="no-js" lang="en-US">
 	<head>
 		<meta charset="utf-8"/>
-
-		{{- partial "meta.html" . -}}
+		{{ partial "meta.html" . -}}
 
 		<title>{{- if not .IsHome -}}{{ .Title }} — {{- end -}}{{ .Site.Title }}</title>
 		<link rel="canonical" href="{{ .Permalink }}">
