@@ -2,12 +2,13 @@
 # See https://github.com/gohugoio/hugoThemes#themetoml for an example
 
 name = "Newsprint"
-license = "BSD"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
-description = "A simple Hugo theme aimed mostly at readability."
-homepage = "https://blog.samwhited.com/"
-tags = []
-features = []
+license = "BSD-2-Clause"
+licenselink = "https://bitbucket.org/SamWhited/blog.samwhited.com/src/master/themes/newsprint/LICENSE.md"
+description = """
+A readable Hugo theme that showcases photos and looks nice on mobile."""
+homepage = ""
+tags = ["blog"]
+features = ["blog"]
 min_version = "0.25.1"
 
 [author]
