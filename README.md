@@ -3,6 +3,8 @@
 **Newsprint** is a theme for [Hugo] that focuses on readability (even on mobile)
 and showcasing photography.
 
+[![Screenshot](https://bytebucket.org/SamWhited/newsprint/raw/master/images/screenshot.png)](https://bytebucket.org/SamWhited/newsprint/raw/master/images/screenshot.png)
+
 ## License
 
 Licensed under the BSD 2 Clause License ([LICENSE] or
