@@ -1,6 +1,6 @@
 {{ .Hugo.Generator }}
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-        {{ if eq .Section "posts" }}
+        {{ if eq .Section "post" }}
         <meta property="og:title" content="{{ .Title }}" />
         {{- if .Params.description }}
         <meta property="og:description" content="{{ .Params.description }}" />

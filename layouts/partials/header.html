@@ -19,7 +19,7 @@
 
 	<body>
 		<header>
-			{{- if eq .Section "posts" -}}
+			{{- if eq .Section "post" -}}
 			{{- if .NextInSection -}}
 			<a class="next" href="{{ .NextInSection.Permalink }}">Next</a>
 			{{- else -}}
@@ -31,7 +31,7 @@
 			{{- end -}}
 			{{- end -}}
 			<h1><a href="/" class="site-title">{{ .Site.Title }}</a></h1>
-			{{- if eq .Section "posts" -}}
+			{{- if eq .Section "post" -}}
 			{{- if .PrevInSection -}}
 			<a class="prev" href="{{ .PrevInSection.Permalink }}">Prev</a>
 			{{- else -}}
