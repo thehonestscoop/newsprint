@@ -1,8 +1,8 @@
 # Newsprint
 
-**Newsprint** is a theme for [Hugo] that focuses on readability (even on mobile)
-and showcasing photography.
-It is set in [Cormorant Garamond] by Christian Thalmann ([Catharsis Fonts]).
+**Newsprint** is a vertically-oriented theme for [Hugo] that focuses on
+readability (even on mobile) and showcasing photography.
+It is typeset in [Cormorant Garamond] by Christian Thalmann ([Catharsis Fonts]).
 
 [![Screenshot](https://bytebucket.org/SamWhited/newsprint/raw/master/images/screenshot.png)](https://bytebucket.org/SamWhited/newsprint/raw/master/images/screenshot.png)
 
