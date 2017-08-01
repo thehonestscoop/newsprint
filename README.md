@@ -110,4 +110,4 @@ additional terms or conditions.
 [Hugo]: https://gohugo.io/
 [Cormorant Garamond]: https://www.behance.net/gallery/28579883/Cormorant-an-open-source-display-font-family
 [Catharsis Fonts]: https://www.myfonts.com/foundry/Catharsis_Fonts/
-[LICENSE]: LICENSE
+[LICENSE]: https://bitbucket.org/SamWhited/newsprint/src/master/LICENSE.md
