@@ -1,8 +1,12 @@
 # Newsprint
 
+[![Issue Tracker on Soquee][badge]][issues]
+
 **Newsprint** is a vertically-oriented theme for [Hugo] that focuses on
 readability (even on mobile) and showcasing photography.
 It is typeset in [Cormorant Garamond] by Christian Thalmann ([Catharsis Fonts]).
+
+Known issues are recorded on [Soquee][issues].
 
 [![Screenshot](https://bytebucket.org/SamWhited/newsprint/raw/master/images/screenshot.png)](https://bytebucket.org/SamWhited/newsprint/raw/master/images/screenshot.png)
 
@@ -107,6 +111,8 @@ Unless you explicitly state otherwise, any contribution intentionally submitted
 for inclusion in the work by you shall be licensed as above, without any
 additional terms or conditions.
 
+[badge]: https://img.shields.io/badge/style-issue%20tracker-green.svg?longCache=true&style=popout-square&label=soquee
+[issues]: https://www.soquee.net/issues/samwhited/newsprint
 [Hugo]: https://gohugo.io/
 [Cormorant Garamond]: https://www.behance.net/gallery/28579883/Cormorant-an-open-source-display-font-family
 [Catharsis Fonts]: https://www.myfonts.com/foundry/Catharsis_Fonts/
