@@ -8,7 +8,7 @@ It is typeset in [Cormorant Garamond] by Christian Thalmann ([Catharsis Fonts]).
 
 Known issues are recorded on [Soquee][issues].
 
-[![Screenshot](https://bytebucket.org/SamWhited/newsprint/raw/master/images/screenshot.png)](https://bytebucket.org/SamWhited/newsprint/raw/master/images/screenshot.png)
+[![Screenshot][screenshot]][screenshot]
 
 
 ## Configuration
@@ -113,7 +113,8 @@ additional terms or conditions.
 
 [badge]: https://img.shields.io/badge/style-issue%20tracker-green.svg?longCache=true&style=popout-square&label=soquee
 [issues]: https://www.soquee.net/issues/samwhited/newsprint
+[screenshot]: https://raw.githubusercontent.com/SamWhited/newsprint/master/images/screenshot.png
 [Hugo]: https://gohugo.io/
 [Cormorant Garamond]: https://www.behance.net/gallery/28579883/Cormorant-an-open-source-display-font-family
 [Catharsis Fonts]: https://www.myfonts.com/foundry/Catharsis_Fonts/
-[LICENSE]: https://bitbucket.org/SamWhited/newsprint/src/master/LICENSE.md
+[LICENSE]: https://raw.githubusercontent.com/SamWhited/newsprint/master/LICENSE.md
