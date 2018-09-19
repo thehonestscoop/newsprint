@@ -394,6 +394,8 @@ blockquote footer cite:before {
 }
 
 .poem {
-	max-width: 30rem !important;
+	display: table;
 	margin: 0 auto !important;
+	max-width: 30rem !important;
+	width: inherit !important;
 }
