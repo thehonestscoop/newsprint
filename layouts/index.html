@@ -11,12 +11,6 @@
 		</div>
 		<div class="prevtext">
 		<h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
-		{{/*
-		The "excerpt" and "description" params are used for backwards compatibility
-		with an old Jekyll theme and some of my posts already had them. New posts
-		shouldn't use these params as they might go away in the future after I've
-		cleaned up my personal blog.
-		*/}}
 		{{- partial "datetime" .Date -}}
 		{{- if .Params.excerpt -}}
 		<p>{{ .Params.excerpt }}</p>
