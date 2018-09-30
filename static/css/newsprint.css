@@ -228,7 +228,7 @@ pre {
 	border: 1px solid rgba(0,0,0,0.15);
 	border-radius: 0.2rem;
 	line-height: 1.3rem;
-	overflow: scroll;
+	overflow: auto;
 	padding: 0.8rem;
 }
 
