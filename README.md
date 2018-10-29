@@ -111,7 +111,7 @@ Unless you explicitly state otherwise, any contribution intentionally submitted
 for inclusion in the work by you shall be licensed as above, without any
 additional terms or conditions.
 
-[badge]: https://img.shields.io/badge/style-samwhited%2fnewsprint-green.svg?longCache=true&style=popout-square&label=soquee
+[badge]: https://img.shields.io/badge/issues-samwhited%2fnewsprint-green.svg?longCache=true&style=popout-square&label=soquee
 [issues]: https://www.soquee.net/issues/samwhited/newsprint
 [screenshot]: https://raw.githubusercontent.com/SamWhited/newsprint/master/images/screenshot.png
 [Hugo]: https://gohugo.io/
